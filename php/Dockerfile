@@ -6,6 +6,7 @@ RUN apt-get update \
 RUN apt-get install -y vim
 RUN apt-get install -y git 
 RUN cd /var/www/html && git clone -b 2.x git://github.com/cakephp/cakephp.git
+RUN cd /var/www/html/cakephp/app && chown -R www-data tmp
 COPY database.php /var/www/html/cakephp/app/Config/
 COPY core.php /var/www/html/cakephp/app/Config/
 COPY ./apache2/sites-available/000-default.conf /etc/apache2/sites-available/
