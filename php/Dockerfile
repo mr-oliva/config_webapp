@@ -11,4 +11,3 @@ COPY database.php /var/www/html/cakephp/app/Config/
 COPY core.php /var/www/html/cakephp/app/Config/
 COPY ./apache2/sites-available/000-default.conf /etc/apache2/sites-available/
 COPY ./apache2/apache2.conf /etc/apache2/
-ENTRYPOINT a2enmod rewrite
