@@ -23,7 +23,7 @@ $ mysql -u root -p
 gitで落としてきたままだとパスワードはcurry
 
 ```
-mysql > GRANT ALL ON *.* to root@'さっきメモったip address' IDENTIFIED BY 'mysqlのパスワード'
+mysql > GRANT ALL ON *.* to root@'さっきメモったip address' IDENTIFIED BY 'mysqlのパスワード';
 mysql > FLUSH PRIVILEGES;
 ```
 ローカルのブラウザで localhostにアクセス！！
