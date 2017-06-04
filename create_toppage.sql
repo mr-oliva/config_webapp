@@ -13,6 +13,6 @@ create table layouts (
   icon_number INT UNSIGNED NOT NULL,
   created DATETIME DEFAULT NULL,
   modified DATETIME DEFAULT NULL,
-  primary key ('goo_id', 'service_id')
+  primary key (`goo_id`, `service_id`)
 );
 

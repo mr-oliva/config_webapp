@@ -26,4 +26,13 @@ gitで落としてきたままだとパスワードはcurry
 mysql > GRANT ALL ON *.* to root@'さっきメモったip address' IDENTIFIED BY 'mysqlのパスワード';
 mysql > FLUSH PRIVILEGES;
 ```
+
+```
+$ env
+```
+ホスト名を確認しておく
+
+## some-webに戻る
+cakephpフォルダ内のdatabase.phpのホストを変更
+
 ローカルのブラウザで localhostにアクセス！！
